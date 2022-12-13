@@ -4,11 +4,15 @@ import 'dotenv/config';
 import config from './config.js';
 config()
 
+import furnitureRoute from './routes/furnitureRoute.js';
+
+
 
 const app = express();
 const jsonparser = bodyParser.json()
-app.use (jsonparser);
+app.use(jsonparser);
 const PORT = 5000;
+app.use('/furniture', furnitureRoute)
 app.get('/', (req, res) => {
     res.send('barev')
 })
