@@ -7,7 +7,7 @@ Welcome to my Furniture store. In my online store you can buy furniture.
 The backend part is written using Node JS/Express, 
 The client side is written in React JS.
 
-## ADMIN PANEL AND  
+## LINK TO FRONTEND  
 
 - [Frontend](https://github.com/Kristina2605D/furniture-store_front_back)
 
