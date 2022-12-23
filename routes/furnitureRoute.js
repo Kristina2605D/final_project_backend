@@ -1,5 +1,5 @@
 import  express  from 'express';
-import { getFurnitures, postFurniture } from '../controllers/FurnitureController.js';
+import { getFurnitures, postFurniture } from '../controllers/furnitureController.js';
 
 
 const router = express.Router();

@@ -1,4 +1,4 @@
-import Furniture from '../schema/ProductSchema.js';
+import Furniture from '../schema/productSchema.js';
 
 
 export const getFurnitures = async (req, res) => {
@@ -7,13 +7,14 @@ export const getFurnitures = async (req, res) => {
         res.json(furniture)
     } catch (error) {
         res.json({
-            message: error
+            message:'something went wrong'
         })
     }
 }
 
 export const postFurniture = async (req, res) => {
     try {
+        // const id = req.params.id
         const furniture = new Furniture({
             title:req.body.title,
             price:req.body.price,
@@ -25,7 +26,7 @@ export const postFurniture = async (req, res) => {
         res.send(furniture)
     } catch(error) {
         res.json({
-            message:error
+            message:'something went wrong'
         })
     }
 }
